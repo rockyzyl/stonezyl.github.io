@@ -113,3 +113,37 @@ a {
   color: #BD5D38; }
   a:hover, a:focus, a:active {
     color: #824027; }
+
+
+/*微信二维码*/
+a.weixin {
+    position: relative;
+}
+ 
+.weixin img {
+  position: absolute;
+  z-index: 99;
+  top: -250px;
+  right: -80px;
+  width: 218px;
+  max-width: none;
+  height: 236px;
+  transform: scale(0);
+  transform-origin: top right;
+  opacity: 0;
+  border-radius: .25rem;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+ 
+}
+ 
+.weixin:hover img,
+.weixin:focus img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.mr-10{
+  margin-right: 10rem;
+}
